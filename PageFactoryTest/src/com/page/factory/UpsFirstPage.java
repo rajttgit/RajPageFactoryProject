@@ -5,15 +5,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class UpsFirstPage {
+public class UpsFirstPage 
+	{
 
 	WebDriver driver;
 	
-	public UpsFirstPage(WebDriver d){
+	
+	public UpsFirstPage(WebDriver d)
+	{
 		this.driver=d;
 		PageFactory.initElements(driver, this);
-		
 	}
+	
 	
 	@FindBy(xpath="//*[@id='ups-menuLinks0']")
 	WebElement tracking;
@@ -25,17 +28,19 @@ public class UpsFirstPage {
 	WebElement services;
 	
 	
-	public WebElement tracking(){
+	public WebElement tracking()
+	{
 		return tracking;
 	}
-	public WebElement shipping(){
+	
+	public WebElement shipping()
+	{
 		return shipping;
 	}
-	public WebElement services(){
+	
+	public WebElement services()
+	{
 		return services;
 	}
-	
-	
-	
-	
+		
 }

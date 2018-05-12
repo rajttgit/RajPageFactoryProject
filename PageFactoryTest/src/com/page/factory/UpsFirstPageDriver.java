@@ -13,19 +13,22 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class PageDriver {
-WebDriver driver = null;
+public class UpsFirstPageDriver 
+	{
+	
+	WebDriver driver = null;
 	
 	@BeforeMethod
-	public void beforeMethod() {
-	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-	driver=new ChromeDriver();
-	
+	public void beforeMethod() 
+	{
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		driver = new ChromeDriver();
 	}
 
 	
 	@Test
-	public void upsHomePageTest() throws InterruptedException{
+	public void upsHomePageTest() throws InterruptedException
+	{
 		driver.get("https://www.ups.com/us/en/Home.page");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -35,20 +38,14 @@ WebDriver driver = null;
 		up1.shipping().click();
 		Thread.sleep(1000);
 		up1.services().click();
-		
-		
 	}	
-	
-	
+		
 	
 	@AfterMethod
-	public void afterMethod() throws InterruptedException {
+	public void afterMethod() throws InterruptedException 
+	{
 		Thread.sleep(2000);
 		driver.quit();
 	}
-
-	
-	
-	
 	
 }
