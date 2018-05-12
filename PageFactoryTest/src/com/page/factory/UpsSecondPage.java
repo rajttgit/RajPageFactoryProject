@@ -5,26 +5,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class UpsFirstPage 
+public class UpsSecondPage 
 {
-
+	
 	WebDriver driver;
 	
 	
-	public UpsFirstPage(WebDriver d)
+	public UpsSecondPage (WebDriver d)
 	{
-		this.driver=d;
+		this.driver = d ;
 		PageFactory.initElements(driver, this);
 	}
 	
 	
-	@FindBy(xpath="//*[@id='ups-menuLinks0']")
+	@FindBy(xpath = "//*[@id='ups-menuLinks0']") 
 	WebElement tracking;
 	
-	@FindBy(xpath="//*[@id='ups-menuLinks1']")
+	@FindBy(xpath = "//*[@id='ups-menuLinks1']")
 	WebElement shipping;
 	
-	@FindBy(xpath="//*[@id='ups-menuLinks2']")
+	@FindBy(xpath = "//*[@id='ups-menuLinks2']")
 	WebElement services;
 	
 	
@@ -42,5 +42,5 @@ public class UpsFirstPage
 	{
 		return services;
 	}
-		
+	
 }

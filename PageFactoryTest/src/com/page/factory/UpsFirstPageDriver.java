@@ -14,9 +14,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class UpsFirstPageDriver 
-	{
+{
 	
 	WebDriver driver = null;
+	
 	
 	@BeforeMethod
 	public void beforeMethod() 
