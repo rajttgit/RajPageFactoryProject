@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.page.factory.UpsSecondPageDriver">
+      <class name="com.page.factory.UpsThirdPageDriver">
         <methods>
           <include name="beforeMethod"/>
-          <include name="upsTrackingPageTest"/>
+          <include name="upsShippingPageTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.page.factory.UpsSecondPageDriver -->
+      </class> <!-- com.page.factory.UpsThirdPageDriver -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
