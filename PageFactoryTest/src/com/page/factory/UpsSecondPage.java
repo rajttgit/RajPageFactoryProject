@@ -11,9 +11,9 @@ public class UpsSecondPage
 	WebDriver driver;
 	
 	
-	public UpsSecondPage (WebDriver d)
+	public UpsSecondPage (WebDriver driver2)
 	{
-		this.driver = d ;
+		driver = driver2 ;
 		PageFactory.initElements(driver, this);
 	}
 	
